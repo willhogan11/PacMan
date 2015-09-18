@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>    
+        <div id="canvas-container">
+            <canvas id="canvasOne" width="800" height="400"></canvas>  
+        </div>
+        
+        <script type="text/javascript">
+            
+            var canvas = document.getElementById("canvasOne");
+            var ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "rgb(255,255,0)";
+            ctx.arc(400, 200, 60, 0.5, Math.PI, false);
+            ctx.fill(); 
+            
+            ctx.fillStyle = "rgb(255,255,0)";
+            ctx.arc(400, 200, 60, -0.5, Math.PI, true);
+            ctx.fill(); 
+            
+        </script>
+        
+    </body>
+</html> 
